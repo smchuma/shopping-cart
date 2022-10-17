@@ -10,7 +10,7 @@ const Home = (props) => {
 
   const onSearchChange = (event) => {
     const searchField = event.target.value.toLowerCase();
-    setSearch(searchField);
+    //setSearch(searchField);
 
     return products.filter((product) =>
       product.title.toLowerCase().includes(searchField)
