@@ -6,7 +6,7 @@ import Products from "../Products/Products";
 const Home = (props) => {
   const { products, loading, cartItems, addProduct, removeProduct } = props;
 
-  const [search, setSearch] = useState("");
+  //const [search, setSearch] = useState("");
 
   const onSearchChange = (event) => {
     const searchField = event.target.value.toLowerCase();
