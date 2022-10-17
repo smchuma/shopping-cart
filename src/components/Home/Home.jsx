@@ -6,16 +6,16 @@ import Products from "../Products/Products";
 const Home = (props) => {
   const { products, loading, cartItems, addProduct, removeProduct } = props;
 
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
 
-  const onSearchChange = (event) => {
-    const searchField = event.target.value.toLowerCase();
-    setSearch(searchField);
+  // const onSearchChange = (event) => {
+  //   const searchField = event.target.value.toLowerCase();
+  //   setSearch(searchField);
 
-    return products.filter((product) =>
-      product.title.toLowerCase().includes(searchField)
-    );
-  };
+  //   return products.filter((product) =>
+  //     product.title.toLowerCase().includes(searchField)
+  //   );
+  // };
 
   return (
     <div>
@@ -25,7 +25,7 @@ const Home = (props) => {
             products={products}
             loading={loading}
             addProduct={addProduct}
-            onSearchChange={onSearchChange}
+            // onSearchChange={onSearchChange}
           />
         </div>
         <div className="cart">

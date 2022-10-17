@@ -16,7 +16,7 @@ const Products = (props) => {
             onChange={onSearchChange}
           />
           <div>
-            <i className="fa-regular fa-magnifying-glass"></i>
+            <ion-icon name="search-outline"></ion-icon>
           </div>
         </div>
         <div>
